@@ -32,7 +32,6 @@ def bfs(graph, start, visited):
                 visited[i] = True
 
 
-
 if __name__=='__main__':
     graph = [
         [], # 인덱스와 숫자를 맞추기 위한 빈 리스트
