@@ -15,7 +15,7 @@
 ## Graph
 
 - [깊이 우선 탐색 DFS](./graph/dfs.py)
-- [너비 우선 탐색 BFS](./graph.bfs.py)
+- [너비 우선 탐색 BFS](./graph/bfs.py)
 
 ## Sort
 
