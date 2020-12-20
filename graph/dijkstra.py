@@ -8,9 +8,9 @@ INF = int(1e9)  # 무한
 def dijkstra(graph, start, distance):
     '''
     특정 노드에서 다른 노드까지 가는 각각의 최단 경로를 구하는 그리디 알고리즘
-    - graph: (연결 노드, 비용)으로 이루어진 2차원 인접 리스트
-    - start: 시작 노드
-    - distance: 시작노드 - i번째 노드까지의 최단 경로를 저장한 리스트
+    - `graph`: (연결 노드, 비용)으로 이루어진 2차원 인접 리스트
+    - `start`: 시작 노드
+    - `distance`: 시작노드 - i번째 노드까지의 최단 경로를 저장한 리스트
     '''
     q = []  # 현재 가장 가까운 노드를 저장하는 우선순위 큐
     # 요소는 (시작노드에서 해당 노드까지의 최단거리, 노드)
@@ -37,17 +37,15 @@ def dijkstra(graph, start, distance):
 
 
 if __name__=='__main__':
-    start = 1
-    graph = [
-        [], # 인덱스와 숫자를 맞추기 위한 빈 리스트
-        [(2, 2), (3, 5), (4, 1)],   # (연결된  노드, 가는 데 필요한 비용)
-        [(3, 3), (4, 2)],
-        [(2, 3), (6, 5)],
-        [(3, 3), (5, 1)],
-        [(3, 1), (6, 2)],
-        []
-    ]
-    distance = [INF] * len(graph)
+    n, m = map(int, input().split())    # 노드와 간선의 개수
+    start = int(input())                # 시작 노드
+    graph = [[] for _ in range(n+1)]    # 2차원 인접리스트
+    distance = [INF] * (n+1)            # 시작노드 - i번째 노드까지의 최단거리 정보
+
+    # 간선 정보 입력
+    for _ in range(m):
+        a, b, c = map(int, input().split())
+        graph[a].append((b, c))
 
     dijkstra(graph, start, distance)
     print(distance[1:])

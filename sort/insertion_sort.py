@@ -5,7 +5,7 @@
 def insertion_sort(arr):
     '''
     삽입 정렬 알고리즘으로 리스트를 정렬
-    - arr: 1차원 리스트
+    - `arr`: 1차원 리스트
     '''
     for i in range(1, len(arr)):
         for j in range(i, 0, -1):

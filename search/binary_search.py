@@ -5,9 +5,9 @@
 def binary_search_with_recursion(arr, target, start, end):
     '''
     재귀로 구현한 이진탐색 알고리즘
-    - arr: 정렬된 리스트
-    - target: 찾으려고 하는 요소
-    - start, end: 탐색의 시작점과 끝점
+    - `arr`: 정렬된 리스트
+    - `target`: 찾으려고 하는 요소
+    - `start`, `end`: 탐색의 시작점과 끝점
     '''
     if start > end:
         return None
@@ -27,9 +27,9 @@ def binary_search_with_recursion(arr, target, start, end):
 def binary_search_with_loop(arr, target, start, end):
     '''
     반복문로 구현한 이진탐색 알고리즘
-    - arr: 정렬된 리스트
-    - target: 찾으려고 하는 요소
-    - start, end: 탐색의 시작점과 끝점
+    - `arr`: 정렬된 리스트
+    - `target`: 찾으려고 하는 요소
+    - `start`, `end`: 탐색의 시작점과 끝점
     '''
     while start <= end:
         mid = (start + end) // 2    # 중간점

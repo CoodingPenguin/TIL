@@ -5,7 +5,7 @@
 def selection_sort(arr):
     '''
     선택 정렬 알고리즘으로 리스트를 정렬
-    - arr: 1차원 리스트
+    - `arr`: 1차원 리스트
     '''
     for i in range(len(arr)):
         min_idx = i     # 가장 작은 원소의 인덱스 값

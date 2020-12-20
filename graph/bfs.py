@@ -8,9 +8,9 @@ from collections import deque
 def bfs(graph, start, visited):
     '''
     너비를 우선으로 하여 전 노드를 탐색
-    - graph: 노드 연결 정보 (2차원 리스트)
-    - start: 시작 노드
-    - visited: 노드 방문 정보 (1차원 리스트)
+    - `graph`: 노드 연결 정보 (2차원 리스트)
+    - `start`: 시작 노드
+    - `visited`: 노드 방문 정보 (1차원 리스트)
     '''
     # 방문하지 않은 인접 노드 저장
     # 처음은 시작 노드로 시작
@@ -43,6 +43,6 @@ if __name__=='__main__':
         [3, 6],
         [2, 4, 5],
     ]
-    visited = [False] * 7
+    visited = [False] * len(graph)
 
     bfs(graph, 1, visited)
