@@ -2,7 +2,6 @@
 # src: 이것이 취업을 위한 코딩테스트다 p.
 # time: 개선 전 - O(VM) / 개선 후 - O(V + MlogV) (V=노드개수, M=연산개수)
 
-
 def find_parent_basic(parent, x):
     if parent[x] != x:
         return find_parent_basic(parent, parent[x])
@@ -20,13 +19,6 @@ def union_parent(parent, a, b):
         parent[b] = a
     else:
         parent[a] = b
-
-def algorithm():
-    '''
-    알고리즘 설명
-    - 인자: 인자의 특징
-    '''
-    pass
 
 
 if __name__ == "__main__":

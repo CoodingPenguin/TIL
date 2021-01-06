@@ -61,6 +61,7 @@
 - [다익스트라 알고리즘](./algorithms/search/dijkstra.py)
 - [플로이드 워셜 알고리즘](./algorithms/search/floyd_warshall.py)
 - [이진 탐색](./algorithms/search/binary_search.py)
+- [정렬된 리스트에서의 특정 범위의 원소 개수](./algorithms/search/bisect_count_item.py)
 
 ---
 
