@@ -4,7 +4,7 @@
 
 def binary_search_with_recursion(arr, target, start, end):
     '''
-    재귀로 구현한 이진탐색 알고리즘
+    재귀로 구현한 이진 탐색 알고리즘을 실행한다
     - `arr`: 정렬된 리스트
     - `target`: 찾으려고 하는 요소
     - `start`, `end`: 탐색의 시작점과 끝점
@@ -26,7 +26,7 @@ def binary_search_with_recursion(arr, target, start, end):
 
 def binary_search_with_loop(arr, target, start, end):
     '''
-    반복문로 구현한 이진탐색 알고리즘
+    반복문로 구현한 이진탐색 알고리즘을 실행한다
     - `arr`: 정렬된 리스트
     - `target`: 찾으려고 하는 요소
     - `start`, `end`: 탐색의 시작점과 끝점

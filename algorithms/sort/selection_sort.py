@@ -4,7 +4,7 @@
 
 def selection_sort(arr):
     '''
-    선택 정렬 알고리즘으로 리스트를 정렬
+    선택 정렬 알고리즘으로 리스트를 정렬한다
     - `arr`: 1차원 리스트
     '''
     for i in range(len(arr)):

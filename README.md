@@ -10,6 +10,7 @@
 
 ## 👩‍💻 작성 규칙
 
+- `자료구조` : 자주 활용하는 자료구조를 정리합니다.
 - `알고리즘` : 필수 알고리즘을 **Python**으로 정리합니다. 출처는 `src`에, 시간복잡도는 `time`으로 주석에 표시합니다.
 - `데이터분석` : 대표적인 데이터(ex. 타이타닉)를 가지고 프레임워크, 라이브러리, 패키지의 사용 예제를 작성합니다. 함수는 인수와 반환값에 대한 설명을 꼭 적습니다.
 
@@ -20,6 +21,7 @@
 
 |     대상     |  분류  |                                             제목                                              |
 | :----------: | :----: | :-------------------------------------------------------------------------------------------: |
+|  `자료구조`  |   책   |  [이것이 취업을 위한 코딩테스트다 with 파이썬](http://www.yes24.com/Product/Goods/91433923)   |
 |  `알고리즘`  | 사이트 |                       [백준 단계별 문제](https://www.acmicpc.net/step)                        |
 |  `알고리즘`  | 사이트 | [프로그래머스 코딩테스트 준비](https://programmers.co.kr/learn/challenges?tab=all_challenges) |
 |  `알고리즘`  |   책   |  [이것이 취업을 위한 코딩테스트다 with 파이썬](http://www.yes24.com/Product/Goods/91433923)   |
@@ -62,6 +64,13 @@
 - [플로이드 워셜 알고리즘](./algorithms/search/floyd_warshall.py)
 - [이진 탐색](./algorithms/search/binary_search.py)
 - [정렬된 리스트에서의 특정 범위의 원소 개수](./algorithms/search/bisect_count_item.py)
+
+#### [그래프]
+
+- [서로소 집합 Union-Find](./algorithms/graph/union_find.py)
+- [그래프 사이클 판별](./algorithms/graph/determine_cycle.py)
+- [크루스칼 알고리즘](algorithms/graph/kruskal.py)
+- [위상 정렬](./algorithms/graph/topology_sort.py)
 
 ---
 

@@ -7,7 +7,7 @@ from collections import deque
 
 def bfs(graph, start, visited):
     '''
-    너비를 우선으로 하여 전 노드를 탐색
+    너비를 우선으로 하여 전 노드를 탐색한다
     - `graph`: 노드 연결 정보 (2차원 리스트)
     - `start`: 시작 노드
     - `visited`: 노드 방문 정보 (1차원 리스트)

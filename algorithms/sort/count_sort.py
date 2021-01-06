@@ -3,7 +3,7 @@
 
 def count_sort(arr):
     '''
-    계수 정렬 알고리즘으로 리스트를 정렬
+    계수 정렬 알고리즘으로 리스트를 정렬한다
     - `arr`: 모든 요소가 음이 아닌 정수로 이루어진 1차원 리스트
     '''
     # 각 요소별 개수 세기
@@ -22,7 +22,7 @@ def count_sort(arr):
 
 def count_sort_with_counter(arr):
     '''
-    Counter를 사용하여 구현한 계수 정렬 알고리즘
+    Counter를 사용하여 구현한 계수 정렬 알고리즘을 실행한다
     - arr: 모든 요소가 음이 아닌 정수로 이루어진 1차원 리스트
     '''
     from collections import Counter
