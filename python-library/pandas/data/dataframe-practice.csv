@@ -1,0 +1,6 @@
+,first_name,last_name,age,city,gender,is_old,height,weight
+0,Jason,Miller,42,San Francisco,M,True,160,50
+1,Molly,Jacobson,52,Baltimore,F,True,180,60
+2,Tina,Ali,36,Miami,,False,170,70
+3,Jake,Milner,24,Douglas,F,False,175,65
+4,Amy,Cooze,73,Boston,,True,150,55
