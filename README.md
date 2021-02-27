@@ -81,4 +81,8 @@
 
 ### [Effective Python](./effective-python)
 
-- [1장. 파이썬답게 생각하기](./effective-python/ch01.md)
+- [1장. 파이썬답게 생각하기](./effective-python/01장_파이썬답게_생각하기.md)
+
+**[☝ 위로 올라가기](#)**
+
+---
