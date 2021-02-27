@@ -17,6 +17,8 @@
   - [Python 라이브러리](#python-라이브러리)
   - [데이터 시각화](#데이터-시각화)
 
+<br/>
+
 ## 🖥 CS
 
 ### [알고리즘](./algorithm)
@@ -42,7 +44,7 @@
 - [크루스칼 알고리즘](algorithm/kruskal.py)
 - [위상 정렬](./algorithm/topology_sort.py)
 
-<small markdown="1">**[✈ 위로 올라가기](#)**</small>
+**[☝ 위로 올라가기](#)**
 
 ---
 
@@ -50,9 +52,11 @@
 
 - [인정 행렬과 인접 리스트](./data-structure/adjacent_matrix_and_list.py)
 
-<small markdown="1">**[✈ 위로 올라가기](#)**</small>
+**[☝ 위로 올라가기](#)**
 
 ---
+
+<br/>
 
 ## 🐍 Python
 
@@ -61,7 +65,7 @@
 - [Numpy](./python-library/numpy/numpy_cheatsheet.ipynb)
 - [Pandas](./python-library/pandas/pandas_cheatsheet.ipynb)
 
-<small markdown="1">**[✈ 위로 올라가기](#)**</small>
+**[☝ 위로 올라가기](#)**
 
 ---
 
@@ -70,6 +74,6 @@
 - [Missingno](./data-visualization/missingno.ipynb)
 - [Pieplot](./data-visualzation/pieplot.ipynb)
 
-<small markdown="1">**[✈ 위로 올라가기](#)**</small>
+**[☝ 위로 올라가기](#)**
 
 ---
