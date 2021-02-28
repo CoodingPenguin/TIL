@@ -24,26 +24,32 @@
 
 ### [알고리즘](./algorithm)
 
-- [행렬 90도 시계방향 회전](./algorithm/rotate_matrix_by_90.py)
-- [에라토스테네스의 체](./algorithm/prime_number.py)
-- [최대공약수](./algorithm/gcd.py)
-- [최소공배수](./algorithm/lcm.py)
-- [2차원 리스트 슬라이싱](./algorithm/slice_2d_list.py)
-- [행렬 전치](./algorithm/transpose_matrix.py)
-- [선택 정렬](./algorithm/selection_sort.py)
-- [삽입 정렬](./algorithm/insertion_sort.py)
-- [퀵 정렬](./algorithm/quick_sort.py)
-- [계수 정렬](./algorithm/count_sort.py)
-- [깊이 우선 탐색 DFS](./algorithm/dfs.py)
-- [너비 우선 탐색 BFS](./algorithm/bfs.py)
-- [다익스트라 알고리즘](./algorithm/dijkstra.py)
-- [플로이드 워셜 알고리즘](./algorithm/floyd_warshall.py)
-- [이진 탐색](./algorithm/binary_search.py)
-- [정렬된 리스트에서의 특정 범위의 원소 개수](./algorithm/bisect_count_item.py)
-- [서로소 집합 Union-Find](./algorithm/union_find.py)
-- [그래프 사이클 판별](./algorithm/determine_cycle.py)
-- [크루스칼 알고리즘](algorithm/kruskal.py)
-- [위상 정렬](./algorithm/topology_sort.py)
+- 수학
+  - [행렬 90도 시계방향 회전](./algorithm/rotate_matrix_by_90.py)
+  - [에라토스테네스의 체](./algorithm/prime_number.py)
+  - [최대공약수](./algorithm/gcd.py)
+  - [최소공배수](./algorithm/lcm.py)
+  - [2차원 리스트 슬라이싱](./algorithm/slice_2d_list.py)
+  - [행렬 전치](./algorithm/transpose_matrix.py)
+- 정렬
+  - [선택 정렬](./algorithm/selection_sort.py)
+  - [삽입 정렬](./algorithm/insertion_sort.py)
+  - [퀵 정렬](./algorithm/quick_sort.py)
+  - [계수 정렬](./algorithm/count_sort.py)
+- 그래프
+  - [다익스트라 알고리즘](./algorithm/dijkstra.py)
+  - [플로이드 워셜 알고리즘](./algorithm/floyd_warshall.py)
+  - [서로소 집합 Union-Find](./algorithm/union_find.py)
+  - [그래프 사이클 판별](./algorithm/determine_cycle.py)
+  - [크루스칼 알고리즘](algorithm/kruskal.py)
+  - [위상 정렬](./algorithm/topology_sort.py)
+- 탐색
+  - [깊이 우선 탐색 DFS](./algorithm/dfs.py)
+  - [너비 우선 탐색 BFS](./algorithm/bfs.py)
+  - [이진 탐색](./algorithm/binary_search.py)
+- 기타
+  - [bisect로 원소 개수 구하기](./algorithm/bisect_count_item.py)
+  - [구간 합](./algorithm/range_sum.py)
 
 ---
 
