@@ -1,14 +1,83 @@
 # Pandas Cheatsheet
 
-```python
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-%matplotlib inline
-
-import warnings
-warnings.filterwarnings("ignore")
-```
+- [1. Pandas](#1-pandas)
+  - [1.1. Terminology](#11-terminology)
+- [2. Data Load](#2-data-load)
+  - [2.1. read_csv](#21-read_csv)
+- [3. Series](#3-series)
+  - [3.1. Series 생성](#31-series-생성)
+    - [3.1.1. 리스트](#311-리스트)
+    - [3.1.2. 딕셔너리](#312-딕셔너리)
+  - [3.2. Series의 속성](#32-series의-속성)
+    - [3.2.1. name - 테이블 이름](#321-name---테이블-이름)
+    - [3.2.2. index - 인덱스 객체](#322-index---인덱스-객체)
+    - [3.2.3. values](#323-values)
+  - [3.3. Series와 in 연산자](#33-series와-in-연산자)
+  - [3.4. Series의 데이터 접근](#34-series의-데이터-접근)
+  - [3.5. astype - 자료형 지정](#35-astype---자료형-지정)
+- [4. Dataframe](#4-dataframe)
+  - [4.1. Dataframe 생성](#41-dataframe-생성)
+  - [4.2. DataFrame의 컬럼 선택](#42-dataframe의-컬럼-선택)
+  - [4.4. Dataframe 인덱싱](#44-dataframe-인덱싱)
+    - [4.4.1. loc - 명칭 기반 인덱싱](#441-loc---명칭-기반-인덱싱)
+    - [4.4.2. iloc - 위치 기반 인덱싱](#442-iloc---위치-기반-인덱싱)
+  - [4.2.3. loc와 iloc 차이](#423-loc와-iloc-차이)
+- [5. Boolean Indexing](#5-boolean-indexing)
+- [6. Dataframe Handling](#6-dataframe-handling)
+  - [6.1. 새로운 컬럼 추가](#61-새로운-컬럼-추가)
+  - [6.2. 전치 (transpose)](#62-전치-transpose)
+  - [6.3. values](#63-values)
+  - [6.4. index](#64-index)
+  - [6.5. to_csv - csv로 변환](#65-to_csv---csv로-변환)
+  - [6.6. del](#66-del)
+- [7. Selection](#7-selection)
+  - [7.1. 컬럼 이름으로 선택](#71-컬럼-이름으로-선택)
+  - [7.2. 인덱스로 선택](#72-인덱스로-선택)
+  - [7.3. 인덱스 변경](#73-인덱스-변경)
+  - [7.4. reset_index - 인덱스 재설정](#74-reset_index---인덱스-재설정)
+  - [7.5. drop - 삭제](#75-drop---삭제)
+- [8. Dataframe Operations](#8-dataframe-operations)
+  - [8.1. Series Operations](#81-series-operations)
+  - [8.2. Dataframe Operations](#82-dataframe-operations)
+  - [8.3. Operations with Dataframe and Series](#83-operations-with-dataframe-and-series)
+    - [8.3.1. Series에 인덱스가 Dataframe의 컬럼 이름인 경우](#831-series에-인덱스가-dataframe의-컬럼-이름인-경우)
+    - [8.3.2. Series 인덱스가 Dataframe의 컬럼 이름이 아닌 경우](#832-series-인덱스가-dataframe의-컬럼-이름이-아닌-경우)
+- [9. map, apply](#9-map-apply)
+  - [9.1. map](#91-map)
+    - [9.1.1. map with lambda](#911-map-with-lambda)
+    - [9.1.2. map with dict](#912-map-with-dict)
+    - [9.1.3. map with Series](#913-map-with-series)
+  - [9.2. replace](#92-replace)
+  - [9.3. apply](#93-apply)
+    - [9.3.1. apply with lambda](#931-apply-with-lambda)
+    - [9.3.2. apply with built-in function](#932-apply-with-built-in-function)
+    - [9.3.3. apply with Series](#933-apply-with-series)
+  - [9.4. applymap](#94-applymap)
+- [10. Pandas Built-in Functions](#10-pandas-built-in-functions)
+  - [10.1. describe - 데이터 요약 정보](#101-describe---데이터-요약-정보)
+  - [10.2. unique - Series 데이터의 유일값 리스트 반환](#102-unique---series-데이터의-유일값-리스트-반환)
+  - [10.3. 기본 연산](#103-기본-연산)
+  - [10.4. isnull - NaN값의 인덱스 반환](#104-isnull---nan값의-인덱스-반환)
+  - [10.5. sort_values - 컬럼 값을 기준으로 데이터를 정렬](#105-sort_values---컬럼-값을-기준으로-데이터를-정렬)
+  - [10.6. value_counts - 컬럼의 값별 개수 반환](#106-value_counts---컬럼의-값별-개수-반환)
+  - [10.7. corr, cov, corrwith - 상관계수와 공분산](#107-corr-cov-corrwith---상관계수와-공분산)
+- [11. Groupby](#11-groupby)
+  - [11.1. Hierarchical Index](#111-hierarchical-index)
+  - [11.2. unstack - 그룹으로 묶인 데이터를 행렬 형태로 전환](#112-unstack---그룹으로-묶인-데이터를-행렬-형태로-전환)
+  - [11.3. swaplevel - 인덱스 레벨 변경](#113-swaplevel---인덱스-레벨-변경)
+  - [11.4. 기본 연산](#114-기본-연산)
+  - [11.5. Grouped - Split된 상태](#115-grouped---split된-상태)
+    - [11.5.1. aggregation - 그룹별 기본 연산](#1151-aggregation---그룹별-기본-연산)
+    - [11.5.2. transform - 개별 데이터 변환.](#1152-transform---개별-데이터-변환)
+    - [11.5.3. filter - 특정 조건의 데이터 추출](#1153-filter---특정-조건의-데이터-추출)
+- [12. Pivot Table](#12-pivot-table)
+- [13. Crosstab](#13-crosstab)
+- [14. merge](#14-merge)
+  - [14.1. on, left_on, right_on - 기준 컬럼 지정](#141-on-left_on-right_on---기준-컬럼-지정)
+  - [14.2. join](#142-join)
+  - [14.3. right_index, left_index](#143-right_index-left_index)
+- [15. concat](#15-concat)
+- [16. Dataframe to pickle](#16-dataframe-to-pickle)
 
 ## 1. Pandas
 
@@ -19,6 +88,16 @@ warnings.filterwarnings("ignore")
 ![용어](./img/terminology.png)
 
 ## 2. Data Load
+
+```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+import warnings
+warnings.filterwarnings("ignore")
+```
 
 ### 2.1. read_csv
 
